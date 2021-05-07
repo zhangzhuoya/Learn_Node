@@ -1,13 +1,16 @@
-## 1-05 基本内置模块
-给
-
-
-filname d:\xxx\xxx\aaa.html
-basename aaa.html
-
-//关于require
-const path = require("path");
-// const basename = path.basename("df/afd/dsf/a.html")
-// console.log(basename);//a.html
-const basename = path.basename("df/afd/dsf/a.html",'.html')//参数二 用来匹配后缀名，如果匹配去掉html。如果不匹配 a.html
-console.log(basename);//a
+## 1-2 全局对象
+> 安装： npm i -D @types/node（智能提示）
+node中的全局对象是global就像浏览器中的window
+这里的所有属性否可以直接用，因为是全局对象
+里面有一个global
+```js
+console.log(global);
+let obj = {
+    setTimeout: {
+    },
+    console: {
+    }
+}
+obj.global = obj;
+console.log(global);
+```

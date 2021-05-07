@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  // "type": "module",//每一个文件都是es模块
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --experimental-modules index.mjs"
+    "start": "node --experimental-modules index.mjs"//运行具体的模块
   },
   "repository": {
     "type": "git",

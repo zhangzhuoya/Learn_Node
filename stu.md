@@ -1,9 +1,19 @@
 ## 1-05 基本内置模块
-给
+### os
+os.EOL：一行结束的分隔符 
+- \n 
+- \r\n windows
+os.arch():获取cpu的架构名(主要是x32 x64)
 
+- os.cpus(): 获取cpu的信息核数
+- os.freemem():获取还有多少内存可以用
+- os.homedir():用户目录
+- os.hostname():获取主机名字
+- os.tmpdir():获取操作系统的临时目录
 
-filname d:\xxx\xxx\aaa.html
-basename aaa.html
+### fs
+> 文件路径：filname d:\xxx\xxx\aaa.html
+> basename aaa.html
 
 //关于require
 const path = require("path");

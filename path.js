@@ -18,5 +18,13 @@ const path = require("path");
 
 // const normalize =  path.normalize('foo/')
 
-const relative = path.relative('/data/orandea/test/aaa','/data/orandea/impl/bbb')//根据两边的路径 换成相对路径的格式,右边的路径根据左边的找到相对的路径
-console.log(relative);
+// const relative = path.relative('/data/orandea/test/aaa','/data/orandea/impl/bbb')//根据两边的路径 换成相对路径的格式,右边的路径根据左边的找到相对的路径
+// console.log(relative);
+
+// const absPath = path.resolve("./a.js");//获取当前的绝对路径，相对于命令行
+// console.log(absPath);
+
+const absPath = path.resolve(__dirname,"./a.js");//获取当前的绝对路径，相对于命令行
+console.log(absPath);
+
+

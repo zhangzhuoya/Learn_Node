@@ -1,0 +1,7 @@
+{
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "watch"： ["*js","*json"]， //只监控js文件，*监控文件的后缀
+    "ignore": ["package*.json","nodemon*.json","node_modules","public"]//忽略监听
+}

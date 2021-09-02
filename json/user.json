@@ -1,9 +1,9 @@
 [{
 	"id": 1,
 	"name": "珠峰培训",
-	"password": "8376ac810bb9f231d28fcf1f",
+	"password": "123456",
 	"sex": 0,
-	"email": "1144709265@qq.com",
+	"email": "1114976368@qq.com",
 	"phone": "18310612838",
 	"departmentId": 1,
 	"jobId": 1,
@@ -12,11 +12,11 @@
 	"state": 0
 }, {
 	"id": 2,
-	"name": "周啸天",
-	"password": "8376ac810bb9f231d28fcf1f",
+	"name": "张卓",
+	"password": "123456",
 	"sex": 0,
-	"email": "zhouxiaotian@qq.com",
-	"phone": "13041086186",
+	"email": "zhangzhuo@qq.com",
+	"phone": "188714552387",
 	"departmentId": 1,
 	"jobId": 5,
 	"desc": "",

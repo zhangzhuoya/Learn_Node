@@ -6,7 +6,15 @@ function dataHandle(str) {
 	});
 	return arr;
 }
-
+function dataHandle(data) {
+    let arr = JSON.parse(data);
+    arr  = data.filter(item => {
+        return item.parseInt(item.state) === 0
+        
+    });
+    console.log(arr);
+    return arr 
+}
 //=>二次加密规则
 function md5Handle(val) {
 	return val.substring(4).split('').reverse().join('').substring(4);
@@ -23,13 +31,18 @@ function success(res, options) {
 	}, options));
 }
 
-//=>根据ID获取对应职务的信息
+// 根据id获取职务信息
+// function queryJOB(data,itemId) {
+    
+//     return data.find(item=>item.id ===itemId);
+
+// }
+
 function queryJOB(req, jobId) {
 	return req.$JOBDATA.find(item => {
 		return parseInt(item.id) === parseInt(jobId);
 	});
 }
-
 
 module.exports = {
 	dataHandle,

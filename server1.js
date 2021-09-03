@@ -3,8 +3,7 @@ let express = require('express'),
 	bodyParser = require('body-parser');
 
 let {
-	dataHandle,
-	success
+	dataHandle
 } = require('./utils');
 
 //=>创建WEB服务
@@ -29,6 +28,7 @@ app.use(bodyParser.urlencoded({
 }));
 //我们把JSON文件中所有存储的数据都获取到，放到REQ.XXX上
 app.use((req, res, next) => {
+	console.log("ww");
 	let path = './json';
 	let p1 = promiseFS.readFile(path + '/user.json'),
 		p2 = promiseFS.readFile(path + '/customer.json'),
@@ -49,6 +49,7 @@ app.use((req, res, next) => {
 	});
 });
 app.get('/s',(req,res)=>{
+	console.log('o');
 	res.send(200)
 })
 
